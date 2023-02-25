@@ -1,0 +1,48 @@
+*{
+    list-style: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+}
+.menu__container{
+    position: fixed;
+    bottom: 5rem;
+    right: 5rem;
+    height: 3rem;
+    aspect-ratio: 1;
+    background: linear-gradient(black 50%, white 50%);
+    border-radius: 50%;
+    border: 1px solid black;
+    z-index: 100;
+    transform-origin: center;
+    transition: 1s ease;
+    cursor: pointer;
+}
+
+li{
+    width: 100%;
+    height: 100%;
+    background: yellow;
+    border-radius: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: inherit;
+    transition: 1s ease;
+    rotate: -72deg;
+    pointer-events: none;
+}
+
+.float-action-button li.show{
+    pointer-events: auto;
+}
+
+i{
+    font-size: 1.5rem;
+}
